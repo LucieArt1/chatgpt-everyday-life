@@ -3,38 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChatGPT in Everyday Life</title>
+<title>ChatGPT Book</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #070b14;
+    background: radial-gradient(circle at top, #0b0f1a, #05070f);
     color: white;
+}
+
+/* TOP BANNER */
+.countdown {
+    background: #ff3c7d;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* HERO */
 .hero {
     text-align: center;
     padding: 70px 20px 40px;
-    background: radial-gradient(circle at top, #1a237e, #070b14);
+    background: linear-gradient(135deg, #1a237e, #0b0f1a);
 }
 
 .book {
     max-width: 320px;
     width: 100%;
-    border-radius: 16px;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+    border-radius: 18px;
+    box-shadow: 0 40px 120px rgba(0,0,0,0.8);
+    transition: 0.3s;
+}
+
+.book:hover {
+    transform: scale(1.03);
 }
 
 h1 {
-    font-size: 2.4rem;
-    margin: 15px 0 10px;
+    font-size: 2.6rem;
+    margin: 20px 0 10px;
 }
 
 .subtitle {
     max-width: 650px;
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
     color: #b7c0ff;
     font-size: 1.15rem;
     line-height: 1.6;
@@ -44,36 +58,25 @@ h1 {
 .cta {
     display: inline-block;
     padding: 16px 34px;
-    background: linear-gradient(90deg, #3f51b5, #2196f3);
+    background: linear-gradient(90deg, #ff3c7d, #3f51b5);
     color: white;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 10px;
-    transition: transform 0.2s;
+    border-radius: 12px;
+    font-size: 1rem;
+    box-shadow: 0 10px 40px rgba(255,60,125,0.3);
+    transition: 0.2s;
 }
 
 .cta:hover {
     transform: scale(1.05);
 }
 
-/* OFFER */
-.offer {
-    text-align: center;
-    padding: 15px;
-    background: #1a237e;
-    font-weight: bold;
-}
-
-/* SECTIONS */
-.section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 20px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
+/* STARS */
+.stars {
+    color: gold;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 /* FACTS */
@@ -81,43 +84,39 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .fact {
-    background: #121a2b;
+    background: rgba(255,255,255,0.05);
     padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #27314f;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
     text-align: center;
 }
 
-/* BENEFITS */
-.benefits {
-    display: grid;
-    gap: 12px;
+/* SECTION */
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
 }
 
-.benefit {
-    background: #121a2b;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #27314f;
-}
-
-/* TESTIMONIALS */
 .testimonial {
-    background: #121a2b;
+    background: rgba(255,255,255,0.06);
     padding: 18px;
     margin-bottom: 12px;
-    border-radius: 10px;
-    border: 1px solid #27314f;
-    color: #cfd8ff;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 /* FINAL CTA */
-.final-cta {
+.bottom {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1a237e, #ff3c7d);
 }
 </style>
 
@@ -125,70 +124,64 @@ h2 {
 
 <body>
 
+<!-- COUNTDOWN -->
+<div class="countdown">
+🔥 LIMITED TIME OFFER — PRICE INCREASING SOON 🔥
+</div>
+
 <!-- HERO -->
 <div class="hero">
 
-<!-- 📘 COVER (HIER KOMMT DEIN BILD REIN) -->
-<img src="cover.jpg" alt="Book Cover" class="book">
+<img src="cover.jpg" class="book" alt="Book Cover">
 
-<h1>Stop Getting Weak Results From ChatGPT</h1>
+<h1>Master ChatGPT in Minutes</h1>
 
 <p class="subtitle">
-Turn ChatGPT into a real productivity tool.
-Write better prompts, save time, and get high-quality AI results — even if you're a complete beginner.
+Learn how to get powerful AI results instantly. Save time, work faster, and unlock the full potential of ChatGPT — even if you're a complete beginner.
 </p>
 
-<a class="cta" href="DEIN_BUCH_LINK_HIER" target="_blank">
-GET THE BOOK NOW
+<div class="stars">
+★★★★★ 4.8/5 (1,284+ readers)
+</div>
+
+<br>
+
+<a class="cta" href="DEIN_BUCH_LINK_HIER">
+GET INSTANT ACCESS 🚀
 </a>
 
 </div>
 
-<!-- OFFER -->
-<div class="offer">
-🚀 Start Using AI More Effectively Today
-</div>
-
 <!-- FACTS -->
-<div class="section">
-<h2>Why this book works</h2>
-
 <div class="facts">
-<div class="fact">Beginner Friendly</div>
-<div class="fact">No Technical Skills Needed</div>
-<div class="fact">Real Practical Use Cases</div>
-<div class="fact">Works With Free ChatGPT</div>
-</div>
-</div>
 
-<!-- BENEFITS -->
-<div class="section">
-<h2>What you will learn</h2>
+<div class="fact">⚡ Beginner Friendly</div>
+<div class="fact">🚀 Instant Results</div>
+<div class="fact">🧠 Smart Prompt Techniques</div>
+<div class="fact">💼 Real-World Applications</div>
 
-<div class="benefits">
-<div class="benefit">✔ How to write powerful prompts that actually work</div>
-<div class="benefit">✔ How to use ChatGPT for work, study & daily life</div>
-<div class="benefit">✔ How to avoid low-quality AI answers</div>
-<div class="benefit">✔ How to save hours every week using AI</div>
-</div>
 </div>
 
 <!-- TESTIMONIALS -->
 <div class="section">
-<h2>What readers say</h2>
 
-<div class="testimonial">“I finally understand how to get useful answers from ChatGPT.”</div>
-<div class="testimonial">“Simple, clear and immediately usable in real life.”</div>
-<div class="testimonial">“This improved my workflow within the first hour.”</div>
+<h2 style="text-align:center;">What readers are saying</h2>
+
+<div class="testimonial">“I never knew ChatGPT could be this powerful. Total game changer.”</div>
+<div class="testimonial">“I use these methods every day at work now. Huge time saver.”</div>
+<div class="testimonial">“Simple, practical, and immediately useful. No fluff at all.”</div>
+
 </div>
 
 <!-- FINAL CTA -->
-<div class="final-cta">
-<h2>Ready to improve your AI results?</h2>
+<div class="bottom">
 
-<a class="cta" href="DEIN_BUCH_LINK_HIER" target="_blank">
-GET INSTANT ACCESS
+<h2>Ready to upgrade your AI skills?</h2>
+
+<a class="cta" href="DEIN_BUCH_LINK_HIER">
+GET THE BOOK NOW 🚀
 </a>
+
 </div>
 
 </body>
