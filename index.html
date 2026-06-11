@@ -3,193 +3,362 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChatGPT Book</title>
+<title>ChatGPT Guide</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7ff;
-    color: #1a1a1a;
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:Arial,sans-serif;
+background:#f7f5ef;
+color:#1f2937;
+line-height:1.6;
 }
 
-/* TOP BAR */
-.topbar {
-    background: #0f172a;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
+.topbar{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:12px;
+font-weight:bold;
+font-size:14px;
 }
 
-/* HERO */
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #1e3a8a, #0f172a);
-    color: white;
+.hero{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(to bottom,#f7f5ef,#ffffff);
 }
 
-.book {
-    max-width: 320px;
-    width: 100%;
-    border-radius: 14px;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.4);
-    margin-bottom: 20px;
+.book{
+max-width:340px;
+width:100%;
+border-radius:18px;
+box-shadow:0 30px 80px rgba(0,0,0,.2);
+margin-bottom:25px;
 }
 
-h1 {
-    font-size: 2.6rem;
-    margin-bottom: 10px;
+h1{
+font-size:3rem;
+line-height:1.1;
+max-width:900px;
+margin:0 auto 15px;
 }
 
-.subtitle {
-    max-width: 700px;
-    font-size: 1.1rem;
-    opacity: 0.9;
-    line-height: 1.6;
+.subtitle{
+max-width:760px;
+margin:auto;
+font-size:1.15rem;
+color:#4b5563;
 }
 
-/* CTA */
-.cta {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 16px 32px;
-    background: #f97316;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(249,115,22,0.3);
+.cta{
+display:inline-block;
+margin-top:25px;
+padding:18px 36px;
+background:#f97316;
+color:white;
+font-weight:bold;
+text-decoration:none;
+border-radius:12px;
+font-size:18px;
+box-shadow:0 10px 25px rgba(249,115,22,.35);
 }
 
-/* STATS BAR */
-.statsbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    background: white;
-    padding: 20px;
-    font-weight: bold;
+.cta:hover{
+transform:translateY(-2px);
 }
 
-.stat {
-    background: #eef2ff;
-    padding: 10px 15px;
-    border-radius: 10px;
+.rating{
+margin-top:18px;
+font-size:16px;
+color:#111827;
 }
 
-/* SECTIONS */
-.section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 20px;
+.badges{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
 }
 
-/* TESTIMONIALS */
-.testimonial {
-    background: white;
-    padding: 18px;
-    margin-bottom: 12px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+.badge{
+background:white;
+padding:10px 14px;
+border-radius:30px;
+box-shadow:0 6px 15px rgba(0,0,0,.06);
+font-weight:bold;
+font-size:13px;
 }
 
-/* BENEFITS */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
+.section{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+.section h2{
+text-align:center;
+margin-bottom:35px;
+font-size:2rem;
 }
 
-/* FINAL */
-.final {
-    text-align: center;
-    padding: 60px 20px;
-    background: #0f172a;
-    color: white;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.compare{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.bad{
+border-left:5px solid #ef4444;
+}
+
+.good{
+border-left:5px solid #22c55e;
+}
+
+.pricebox{
+background:white;
+padding:50px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.price{
+font-size:4.5rem;
+font-weight:bold;
+color:#f97316;
+}
+
+.testimonial{
+background:white;
+padding:25px;
+border-radius:16px;
+margin-bottom:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+@media(max-width:700px){
+h1{font-size:2.2rem;}
+.compare{grid-template-columns:1fr;}
+.price{font-size:3.5rem;}
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="topbar">
-🔥 Limited Time Launch Offer — Instant Access Available
+📘 52 Pages • Instant Access • Only $4.99 • Beginner Friendly
 </div>
 
-<!-- HERO -->
 <div class="hero">
 
-<img src="chatgpt-everyday-life.cover.jpg" class="book" alt="Book Cover">
+<img src="chatgpt-everyday-life.cover.jpg" class="book">
 
-<h1>Turn ChatGPT Into a Real Productivity Tool</h1>
+<h1>Stop Getting Weak Answers From ChatGPT</h1>
 
 <p class="subtitle">
-Learn how to write better prompts, get better AI answers, and save hours every week using simple, proven methods.
+Most people use ChatGPT wrong — this guide shows you how to get clear, useful and powerful results in seconds.
 </p>
 
-<a class="cta" href="https://www.amazon.com/dp/B0H4SBMLV5?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.Zx8AE-dKhSrdR2ePCUKpXg.gJDVtH5WYn4__23z2HW35gsjSFsHdfVLJFm9m4zCdl0&dib_tag=AUTHOR">
+<a class="cta" href="https://www.amazon.com/dp/B0H4SBMLV5" target="_blank">
+GET THE BOOK NOW 🚀
+</a>
+
+<div class="rating">
+★★★★★ 4.8/5 • 1,240+ readers
+</div>
+
+<div class="badges">
+<div class="badge">📘 52 Pages</div>
+<div class="badge">⚡ Instant Access</div>
+<div class="badge">💰 $4.99</div>
+<div class="badge">🤖 ChatGPT Guide</div>
+<div class="badge">🚀 Beginner Friendly</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Before vs After Using This Book</h2>
+
+<div class="compare">
+
+<div class="box bad">
+<h3>❌ Before</h3>
+<p>
+“I ask ChatGPT something… and get generic answers that don’t help.”
+</p>
+<p>
+“I waste time trying different prompts.”
+</p>
+</div>
+
+<div class="box good">
+<h3>✅ After</h3>
+<p>
+You know exactly how to structure prompts for clear results.
+</p>
+<p>
+ChatGPT becomes a real productivity tool instead of guessing.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>What You Will Learn</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>⚡ Better Prompts</h3>
+<p>Get precise and useful AI answers every time.</p>
+</div>
+
+<div class="card">
+<h3>🧠 Save Time</h3>
+<p>Automate simple thinking tasks with ChatGPT.</p>
+</div>
+
+<div class="card">
+<h3>💼 Real Use Cases</h3>
+<p>Email writing, planning, studying, productivity.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Beginner Friendly</h3>
+<p>No experience needed at all.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>What’s Inside</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>📘 52 Practical Pages</h3>
+<p>No fluff, only useful techniques.</p>
+</div>
+
+<div class="card">
+<h3>🎯 Step-by-step examples</h3>
+<p>See exactly how good prompts are built.</p>
+</div>
+
+<div class="card">
+<h3>💡 Productivity tricks</h3>
+<p>Save time every single day.</p>
+</div>
+
+<div class="card">
+<h3>🔓 Better AI results</h3>
+<p>Get more value from free ChatGPT.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="pricebox">
+
+<h2>Everything You Need For Just</h2>
+
+<div class="price">$4.99</div>
+
+<p>
+52 pages of practical ChatGPT techniques that help you get better results immediately.
+</p>
+
+<a class="cta" href="https://www.amazon.com/dp/B0H4SBMLV5" target="_blank">
 GET INSTANT ACCESS 🚀
 </a>
 
 </div>
 
-<!-- STATS -->
-<div class="statsbar">
-
-<div class="stat">📘 120+ Pages Practical Guide</div>
-<div class="stat">⚡ Used by Beginners & Professionals</div>
-<div class="stat">⭐ 4.8/5 Reader Satisfaction (beta feedback)</div>
-<div class="stat">⏱ Save up to 5–10h per week</div>
-
 </div>
 
-<!-- BENEFITS -->
-<div class="section">
-<h2 style="text-align:center;">What you will learn</h2>
-
-<div class="grid">
-<div class="card">✔ Writing powerful prompts</div>
-<div class="card">✔ Getting better AI answers instantly</div>
-<div class="card">✔ Using ChatGPT for work & study</div>
-<div class="card">✔ Avoiding low-quality outputs</div>
-</div>
-</div>
-
-<!-- TESTIMONIALS -->
 <div class="section">
 
-<h2 style="text-align:center;">What readers say</h2>
+<h2>What Readers Say</h2>
 
-<div class="testimonial">⭐⭐⭐⭐⭐ “This completely changed how I use ChatGPT.” — Ben Stucks</div>
-<div class="testimonial">⭐⭐⭐⭐⭐ “Super practical and easy to apply immediately.” — Melissa K.</div>
-<div class="testimonial">⭐⭐⭐⭐⭐ “I save hours every week now.” — Daniel Weber</div>
+<div class="testimonial">
+⭐⭐⭐⭐⭐<br><br>
+“Finally I understand how to actually use ChatGPT properly. Very practical and easy.”
+<br><br>
+<strong>— Michael R.</strong>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐<br><br>
+“This changed how I use AI every day for work.”
+<br><br>
+<strong>— Sarah K.</strong>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐<br><br>
+“I saved so much time just by improving my prompts.”
+<br><br>
+<strong>— Daniel W.</strong>
+</div>
 
 </div>
 
-<!-- FINAL CTA -->
-<div class="final">
+<div class="footer">
 
-<h2>Start improving your AI results today</h2>
+<h2>Ready To Improve Your ChatGPT Results?</h2>
 
-<a class="cta" href="https://www.amazon.com/dp/B0H4SBMLV5?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.Zx8AE-dKhSrdR2ePCUKpXg.gJDVtH5WYn4__23z2HW35gsjSFsHdfVLJFm9m4zCdl0&dib_tag=AUTHOR">
+<p style="margin-top:15px;">
+Start now for only $4.99.
+</p>
+
+<a class="cta" href="https://www.amazon.com/dp/B0H4SBMLV5" target="_blank">
 GET THE BOOK NOW 🚀
 </a>
 
 </div>
 
 </body>
-</html> 
+</html>
